@@ -96,7 +96,8 @@ wpbingo.gotoTop = function() {
 };
 
 wpbingo.docSidebar = function () {
-  var docStickySidebar = new StickySidebar('.bwp-sidebar', {
+  if (!document.querySelector('.bwp-sidebar')) return;
+  return new StickySidebar('.bwp-sidebar', {
     containerSelector: '.page-doc__content',
     innerWrapperSelector: '.bwp-sidebar__inner'
   });
