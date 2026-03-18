@@ -20,8 +20,8 @@
     <header class="bwp-header">
       <div class="bwp-header__wrapper">
         <div class="bwp-header__content d-flex justify-content-between align-items-center">
-          <h1 class="bwp-logo"><a class="bwp-logo__link" href="index.html"><img class="img-fluid" src="images/5DLA_header_logo_white_bg.png"
-                alt="Logo" /><span class="d-none">Wpbingo</span></a></h1>
+          <h1 class="bwp-logo"><a class="bwp-logo__link" href="index.html"><img class="img-fluid"
+                src="images/5DLA_header_logo_white_bg.png" alt="Logo" /><span class="d-none">Wpbingo</span></a></h1>
           <nav class="bwp-main-menu">
             <ul class="nav">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -61,9 +61,11 @@
                   </li>
                   <li>
                     <p>
-                      Update <strong>Handle</strong> to a unique value for Sales items (example:
-                      <strong>womens-urban-shorts ➡️ womens-urban-shorts-sales</strong>) to <span style="color: red;">avoid overwriting
-                      the original product.</span>
+                      <span style="color: red;"><b>(MUST)*</b></span>
+                      Update <strong>Handle</strong> to separate Sales products from the Original (example:
+                      <strong>womens-urban-shorts ➡️ womens-urban-shorts-sales</strong>) to <span
+                        style="color: red;">avoid overwriting
+                        the original product.</span>
                     </p>
                     <div class="bwp-image"><a href="images/porderwsale/chrome_hNfglQmhso.png"
                         data-fancybox="data-fancybox"><img class="img-fluid"
@@ -71,15 +73,41 @@
                   </li>
                   <li>
                     <p>
-                      Update <strong>Tags</strong> to include one dedicated Sales tag (example:
+                      <span style="color: red;"><b>(MUST)*</b></span>
+                      Update <strong>Tags</strong> so we can use it later in the smart collection conditions (example:
                       <strong>Sales</strong>). You will reuse this tag in the next steps.
                     </p>
                     <div class="bwp-image"><a href="images/porderwsale/chrome_KUEUI3ekrc.png"
                         data-fancybox="data-fancybox"><img class="img-fluid"
                           src="images/porderwsale/chrome_KUEUI3ekrc.png" alt="Wpbingo" /></a></div>
                   </li>
+                  <li>
+                    <p>
+                      <span style="color: #aaa;"><b>(OPTIONAL)</b></span>
+                      Update <strong>Variant Inventory Policy</strong> from "deny" to "continue" to allow customers to
+                      purchase the Sales products even when they are out of stock. This is useful if you don't want to
+                      manage inventory for the Sales products.
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_RoSq9IWors.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_RoSq9IWors.png" alt="Wpbingo" /></a></div>
+                    <p>
+                      It will enable this option in Admin page for the Sales products:
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_9nyffk2dJZ.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_9nyffk2dJZ.png" alt="Wpbingo" /></a></div>
+                  </li>
+                  <li>
+                    <p>
+                      After editing, save the CSV file and import it back to Shopify. Make sure to choose the option
+                      <b>Overwrite products with matching handles</b> to ensure all data is created/updated correctly.
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_4ypHslgtzF.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_4ypHslgtzF.png" alt="Wpbingo" /></a></div>
+                  </li>
                 </ol>
-
               </section>
               <section class="section-documentation" id="Step2">
                 <h2 class="section-documentation__heading">STEP 2: Configure to exclude products from being searched
@@ -141,6 +169,10 @@
                     <div class="bwp-image"><a href="images/porderwsale/chrome_SJkjKhNxWp.png"
                         data-fancybox="data-fancybox"><img class="img-fluid"
                           src="images/porderwsale/chrome_SJkjKhNxWp.png" alt="Wpbingo" /></a></div>
+                    <p>
+                      By doing this, you ensure that the Sales products are only included in the secret collection and
+                      not duplicated in other collections.
+                    </p>
                   </li>
                 </ol>
               </section>
