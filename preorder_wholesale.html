@@ -41,9 +41,11 @@
                 <div class="bwp-sidebar__inner">
                   <div class="nav nav-pills nav--sidebar flex-column">
                     <a class="nav-link js-nav-scroll" href="#Step1">STEP 1: Prepare Sales products</a>
-                    <a class="nav-link js-nav-scroll" href="#Step2">STEP 2: Exclude from search</a>
-                    <a class="nav-link js-nav-scroll" href="#Step3">STEP 3: Create secret collection</a>
-                    <a class="nav-link js-nav-scroll" href="#Step4">STEP 4: Exclude from other collections</a>
+                    <a class="nav-link js-nav-scroll" href="#Step2">STEP 2: Control Inventory</a>
+                    <a class="nav-link js-nav-scroll" href="#Step3">STEP 3: Import Products</a>
+                    <a class="nav-link js-nav-scroll" href="#Step4">STEP 4: Exclude from search</a>
+                    <a class="nav-link js-nav-scroll" href="#Step5">STEP 5: Create secret collection</a>
+                    <a class="nav-link js-nav-scroll" href="#Step6">STEP 6: Exclude from other collections</a>
                   </div>
                 </div>
               </div>
@@ -56,7 +58,8 @@
                   <li>
                     <p>
                       Export your products and open the CSV file. The key columns you will edit are
-                      <strong>Handle</strong> and <strong>Tags</strong>.
+                      <strong>Handle</strong>, <strong>Tags</strong>, <strong>Published</strong>, and
+                      <strong>Status</strong>.
                     </p>
                   </li>
                   <li>
@@ -83,6 +86,29 @@
                   </li>
                   <li>
                     <p>
+                      <span style="color: red;"><b>(MUST)*</b></span>
+                      Update <strong>Published</strong> to "TRUE" and <strong>Status</strong> to "active" to make sure
+                      the Sales products are available on the storefront.
+                    </p>
+                    <p>
+                      If you want to hide the Sales products from
+                      the storefront, you can set Published to "FALSE" or Status to "draft".
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_wPZwZ5NIo8.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_wPZwZ5NIo8.png" alt="Wpbingo" /></a></div>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_l5cbsY3Z4d.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_l5cbsY3Z4d.png" alt="Wpbingo" /></a></div>
+                  </li>
+                </ol>
+              </section>
+              <section class="section-documentation" id="Step2">
+                <h2 class="section-documentation__heading">STEP 2: Configure to control inventory
+                </h2>
+                <ol>
+                  <li>
+                    <p>
                       <span style="color: #aaa;"><b>(OPTIONAL)</b></span>
                       Update <strong>Variant Inventory Policy</strong> from "deny" to "continue" to allow customers to
                       purchase the Sales products even when they are out of stock. This is useful if you don't want to
@@ -98,8 +124,15 @@
                         data-fancybox="data-fancybox"><img class="img-fluid"
                           src="images/porderwsale/chrome_9nyffk2dJZ.png" alt="Wpbingo" /></a></div>
                   </li>
+                </ol>
+              </section>
+              <section class="section-documentation" id="Step3">
+                <h2 class="section-documentation__heading">STEP 3: Import Products via Admin page
+                </h2>
+                <ol>
                   <li>
                     <p>
+                      <span style="color: red;"><b>(MUST)*</b></span>
                       After editing, save the CSV file and import it back to Shopify. Make sure to choose the option
                       <b>Overwrite products with matching handles</b> to ensure all data is created/updated correctly.
                     </p>
@@ -109,8 +142,8 @@
                   </li>
                 </ol>
               </section>
-              <section class="section-documentation" id="Step2">
-                <h2 class="section-documentation__heading">STEP 2: Configure to exclude products from being searched
+              <section class="section-documentation" id="Step4">
+                <h2 class="section-documentation__heading">STEP 4: Configure to exclude products from being searched
                 </h2>
                 <ol>
                   <li>
@@ -129,8 +162,8 @@
                   </li>
                 </ol>
               </section>
-              <section class="section-documentation" id="Step3">
-                <h2 class="section-documentation__heading">STEP 3: Create secret smart collection</h2>
+              <section class="section-documentation" id="Step5">
+                <h2 class="section-documentation__heading">STEP 5: Create secret smart collection</h2>
                 <ol>
                   <li>
                     <p>
@@ -152,8 +185,8 @@
                   </li>
                 </ol>
               </section>
-              <section class="section-documentation" id="Step4">
-                <h2 class="section-documentation__heading">STEP 4: Ensure Sales products are not imported to other
+              <section class="section-documentation" id="Step6">
+                <h2 class="section-documentation__heading">STEP 6: Ensure Sales products are not imported to other
                   collections</h2>
                 <ol>
                   <li>
