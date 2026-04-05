@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#008dcf" />
+  <meta name="author" content="Wpbingo" />
+  <meta name="copyright" content="Wpbingo" />
+  <link rel="shortcut icon" href="images/favico/icon_32.png" type="image/png" />
+  <title>Release note</title>
+  <link href="assets/css/wpbingo-site.css" rel="stylesheet" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="bwp-header">
+      <div class="bwp-header__wrapper">
+        <div class="bwp-header__content d-flex justify-content-between align-items-center">
+          <h1 class="bwp-logo"><a class="bwp-logo__link" href="index.html"><img class="img-fluid"
+                src="images/5DLA_header_logo_white_bg.png" alt="Logo" /><span class="d-none">Wpbingo</span></a></h1>
+          <nav class="bwp-main-menu">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://wpbingo.ticksy.com/">Help topics</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="bwp-main">
+      <div class="page-doc">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-3">
+              <div class="bwp-sidebar">
+                <div class="bwp-sidebar__inner">
+                  <div class="nav nav-pills nav--sidebar flex-column">
+                    <a class="nav-link js-nav-scroll" href="#Step1">STEP 1: Prepare Sales products</a>
+                    <a class="nav-link js-nav-scroll" href="#Step2">STEP 2: Control Inventory</a>
+                    <a class="nav-link js-nav-scroll" href="#Step3">STEP 3: Import Products</a>
+                    <a class="nav-link js-nav-scroll" href="#Step4">STEP 4: Exclude from search</a>
+                    <a class="nav-link js-nav-scroll" href="#Step5">STEP 5: Create secret collection</a>
+                    <a class="nav-link js-nav-scroll" href="#Step6">STEP 6: Exclude from other collections</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-doc__content col-12 col-md-9">
+              <section class="section-documentation" id="Step1">
+                <h2 class="section-documentation__heading">STEP 1: Prepare Sales products by import/export functions
+                </h2>
+                <ol>
+                  <li>
+                    <p>
+                      Export your products and open the CSV file. The key columns you will edit are
+                      <strong>Handle</strong>, <strong>Tags</strong>, <strong>Published</strong>, and
+                      <strong>Status</strong>.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span style="color: red;"><b>(MUST)*</b></span>
+                      Update <strong>Handle</strong> to separate Sales products from the Original (example:
+                      <strong>womens-urban-shorts ➡️ womens-urban-shorts-sales</strong>) to <span
+                        style="color: red;">avoid overwriting
+                        the original product.</span>
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_hNfglQmhso.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_hNfglQmhso.png" alt="Wpbingo" /></a></div>
+                  </li>
+                  <li>
+                    <p>
+                      <span style="color: red;"><b>(MUST)*</b></span>
+                      Update <strong>Tags</strong> so we can use it later in the smart collection conditions (example:
+                      <strong>Sales</strong>). You will reuse this tag in the next steps.
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_KUEUI3ekrc.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_KUEUI3ekrc.png" alt="Wpbingo" /></a></div>
+                  </li>
+                  <li>
+                    <p>
+                      <span style="color: red;"><b>(MUST)*</b></span>
+                      Update <strong>Published</strong> to "TRUE" and <strong>Status</strong> to "active" to make sure
+                      the Sales products are available on the storefront.
+                    </p>
+                    <p>
+                      If you want to hide the Sales products from
+                      the storefront, you can set Published to "FALSE" or Status to "draft".
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_wPZwZ5NIo8.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_wPZwZ5NIo8.png" alt="Wpbingo" /></a></div>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_l5cbsY3Z4d.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_l5cbsY3Z4d.png" alt="Wpbingo" /></a></div>
+                  </li>
+                </ol>
+              </section>
+              <section class="section-documentation" id="Step2">
+                <h2 class="section-documentation__heading">STEP 2: Configure to control inventory
+                </h2>
+                <ol>
+                  <li>
+                    <p>
+                      <span style="color: #aaa;"><b>(OPTIONAL)</b></span>
+                      Update <strong>Variant Inventory Policy</strong> from "deny" to "continue" to allow customers to
+                      purchase the Sales products even when they are out of stock. This is useful if you don't want to
+                      manage inventory for the Sales products.
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_RoSq9IWors.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_RoSq9IWors.png" alt="Wpbingo" /></a></div>
+                    <p>
+                      It will enable this option in Admin page for the Sales products:
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_9nyffk2dJZ.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_9nyffk2dJZ.png" alt="Wpbingo" /></a></div>
+                  </li>
+                </ol>
+              </section>
+              <section class="section-documentation" id="Step3">
+                <h2 class="section-documentation__heading">STEP 3: Import Products via Admin page
+                </h2>
+                <ol>
+                  <li>
+                    <p>
+                      <span style="color: red;"><b>(MUST)*</b></span>
+                      After editing, save the CSV file and import it back to Shopify. Make sure to choose the option
+                      <b>Overwrite products with matching handles</b> to ensure all data is created/updated correctly.
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_4ypHslgtzF.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_4ypHslgtzF.png" alt="Wpbingo" /></a></div>
+                  </li>
+                </ol>
+              </section>
+              <section class="section-documentation" id="Step4">
+                <h2 class="section-documentation__heading">STEP 4: Configure to exclude products from being searched
+                </h2>
+                <ol>
+                  <li>
+                    <p>
+                      Follow the guide here:
+                      <a href="search.html#Exclude"><i><u>Exclude products from Search</u></i></a>.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Add the same Sales tag from STEP 1 to the theme search exclusion settings.
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_qQikTXZlQo.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_qQikTXZlQo.png" alt="Wpbingo" /></a></div>
+                  </li>
+                </ol>
+              </section>
+              <section class="section-documentation" id="Step5">
+                <h2 class="section-documentation__heading">STEP 5: Create secret smart collection</h2>
+                <ol>
+                  <li>
+                    <p>
+                      Use the guide here:
+                      <a href="collection_pages.html#ProtectedCollection">
+                        <i><u>Protected Collection</u></i>
+                      </a> to create a secret
+                      collection.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Configure the smart condition to include all Sales products:
+                      Tag <strong>is equal to</strong> the Sales tag from STEP 1.
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_HztuyKpac8.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_HztuyKpac8.png" alt="Wpbingo" /></a></div>
+                  </li>
+                </ol>
+              </section>
+              <section class="section-documentation" id="Step6">
+                <h2 class="section-documentation__heading">STEP 6: Ensure Sales products are not imported to other
+                  collections</h2>
+                <ol>
+                  <li>
+                    <p>
+                      Go to other collections that use smart conditions.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Add an exclusion rule so Sales products are filtered out:
+                      Tag <strong>is not equal to</strong> the Sales tag from STEP 1.
+                    </p>
+                    <div class="bwp-image"><a href="images/porderwsale/chrome_SJkjKhNxWp.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/porderwsale/chrome_SJkjKhNxWp.png" alt="Wpbingo" /></a></div>
+                    <p>
+                      By doing this, you ensure that the Sales products are only included in the secret collection and
+                      not duplicated in other collections.
+                    </p>
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bwp-footer">
+      <div class="bwp-footer__wrapper">
+        <div class="container">
+          <div class="bwp-copyright text-center">Copyright © 2026 by 5dla.com. All right reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <div class="gototop"><a class="js-gototop" href="javascript.void(0);" style="display: none;">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284.929 284.929">
+          <path
+            d="M149.028,117.055c-1.901-1.906-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,250.1    C0.95,252.003,0,254.192,0,256.67c0,2.472,0.953,4.661,2.856,6.564l14.272,14.276c1.903,1.903,4.093,2.848,6.567,2.848    c2.474,0,4.664-0.951,6.567-2.848l112.204-112.209l112.208,112.209c1.902,1.903,4.093,2.852,6.563,2.852    c2.478,0,4.668-0.948,6.57-2.852l14.274-14.276c1.902-1.903,2.847-4.093,2.847-6.564c0-2.478-0.951-4.667-2.847-6.57    L149.028,117.055z">
+          </path>
+        </svg></a></div>
+    <script type="text/javascript" src="assets/js/wpbingo.js"></script>
+  </div>
+</body>
+
+</html>
