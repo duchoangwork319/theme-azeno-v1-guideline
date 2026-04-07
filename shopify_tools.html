@@ -40,172 +40,173 @@
               <div class="bwp-sidebar">
                 <div class="bwp-sidebar__inner">
                   <div class="nav nav-pills nav--sidebar flex-column">
-                    <a class="nav-link js-nav-scroll" href="#Step1">STEP 1: Prepare Sales products</a>
-                    <a class="nav-link js-nav-scroll" href="#Step2">STEP 2: Control Inventory</a>
-                    <a class="nav-link js-nav-scroll" href="#Step3">STEP 3: Import Products</a>
-                    <a class="nav-link js-nav-scroll" href="#Step4">STEP 4: Exclude from search</a>
-                    <a class="nav-link js-nav-scroll" href="#Step5">STEP 5: Create secret collection</a>
-                    <a class="nav-link js-nav-scroll" href="#Step6">STEP 6: Exclude from other collections</a>
+                    <a class="nav-link js-nav-scroll" href="#Step1">STEP 1: Prepare Product CSV</a>
+                    <a class="nav-link js-nav-scroll" href="#Step2">STEP 2: Access Tool</a>
+                    <a class="nav-link js-nav-scroll" href="#Step3">STEP 3: Features</a>
+                    <a class="nav-link js-nav-scroll" href="#Step4">STEP 4: Download</a>
+                    <a class="nav-link js-nav-scroll" href="#Step5">STEP 5: Rollback and Detach</a>
+                    <a class="nav-link js-nav-scroll" href="#Note">NOTE</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="page-doc__content col-12 col-md-9">
               <section class="section-documentation" id="Step1">
-                <h2 class="section-documentation__heading">STEP 1: Prepare Sales products by import/export functions
+                <h2 class="section-documentation__heading">
+                  STEP 1: Prepare Product CSV
                 </h2>
                 <ol>
                   <li>
                     <p>
-                      Export your products and open the CSV file. The key columns you will edit are
-                      <strong>Handle</strong>, <strong>Tags</strong>, <strong>Published</strong>, and
-                      <strong>Status</strong>.
+                      Go to Admin page and export products that you want to sync.
                     </p>
-                  </li>
-                  <li>
-                    <p>
-                      <span style="color: red;"><b>(MUST)*</b></span>
-                      Update <strong>Handle</strong> to separate Sales products from the Original (example:
-                      <strong>womens-urban-shorts ➡️ womens-urban-shorts-sales</strong>) to <span
-                        style="color: red;">avoid overwriting
-                        the original product.</span>
-                    </p>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_hNfglQmhso.png"
+                    <div class="bwp-image"><a href="images/shopifytools/chrome_uM0AbTpkIZ.png"
                         data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_hNfglQmhso.png" alt="Wpbingo" /></a></div>
-                  </li>
-                  <li>
-                    <p>
-                      <span style="color: red;"><b>(MUST)*</b></span>
-                      Update <strong>Tags</strong> so we can use it later in the smart collection conditions (example:
-                      <strong>Sales</strong>). You will reuse this tag in the next steps.
-                    </p>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_KUEUI3ekrc.png"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_KUEUI3ekrc.png" alt="Wpbingo" /></a></div>
-                  </li>
-                  <li>
-                    <p>
-                      <span style="color: red;"><b>(MUST)*</b></span>
-                      Update <strong>Published</strong> to "TRUE" and <strong>Status</strong> to "active" to make sure
-                      the Sales products are available on the storefront.
-                    </p>
-                    <p>
-                      If you want to hide the Sales products from
-                      the storefront, you can set Published to "FALSE" or Status to "draft".
-                    </p>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_wPZwZ5NIo8.png"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_wPZwZ5NIo8.png" alt="Wpbingo" /></a></div>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_l5cbsY3Z4d.png"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_l5cbsY3Z4d.png" alt="Wpbingo" /></a></div>
+                          src="images/shopifytools/chrome_uM0AbTpkIZ.png" alt="Wpbingo" /></a></div>
                   </li>
                 </ol>
               </section>
               <section class="section-documentation" id="Step2">
-                <h2 class="section-documentation__heading">STEP 2: Configure to control inventory
+                <h2 class="section-documentation__heading">
+                  STEP 2: Access Tool
                 </h2>
                 <ol>
                   <li>
                     <p>
-                      <span style="color: #aaa;"><b>(OPTIONAL)</b></span>
-                      Update <strong>Variant Inventory Policy</strong> from "deny" to "continue" to allow customers to
-                      purchase the Sales products even when they are out of stock. This is useful if you don't want to
-                      manage inventory for the Sales products.
+                      Access this link: <a target="_blank"
+                        href="https://duchoangwork319.github.io/shopifytools/">Shopify Tools</a>
                     </p>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_RoSq9IWors.png"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_RoSq9IWors.png" alt="Wpbingo" /></a></div>
+                    <div class="bwp-image"><a href="images/shopifytools/nPKBK6d4LK.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid" src="images/shopifytools/nPKBK6d4LK.png"
+                          alt="Wpbingo" /></a></div>
+                  </li>
+                  <li>
                     <p>
-                      It will enable this option in Admin page for the Sales products:
+                      Import the Product CSV to the app.
                     </p>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_9nyffk2dJZ.png"
+                    <div class="bwp-image"><a href="images/shopifytools/chrome_uBbBnonT0E.png"
                         data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_9nyffk2dJZ.png" alt="Wpbingo" /></a></div>
+                          src="images/shopifytools/chrome_uBbBnonT0E.png" alt="Wpbingo" /></a></div>
+                    <p>
+                      After importing, the app will show the CSV preview table.
+                    </p>
+                    <div class="bwp-image"><a href="images/shopifytools/chrome_w80zSvedgw.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/shopifytools/chrome_w80zSvedgw.png" alt="Wpbingo" /></a></div>
                   </li>
                 </ol>
               </section>
               <section class="section-documentation" id="Step3">
-                <h2 class="section-documentation__heading">STEP 3: Import Products via Admin page
+                <h2 class="section-documentation__heading">
+                  STEP 3: Features
                 </h2>
                 <ol>
                   <li>
                     <p>
-                      <span style="color: red;"><b>(MUST)*</b></span>
-                      After editing, save the CSV file and import it back to Shopify. Make sure to choose the option
-                      <b>Overwrite products with matching handles</b> to ensure all data is created/updated correctly.
+                      Let's walkthrough the "Fetch" features
                     </p>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_4ypHslgtzF.png"
+                    <div class="bwp-image"><a href="images/shopifytools/chrome_i1yd1uoIH4.png"
                         data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_4ypHslgtzF.png" alt="Wpbingo" /></a></div>
+                          src="images/shopifytools/chrome_i1yd1uoIH4.png" alt="Wpbingo" /></a></div>
+                    <ul>
+                      <li>
+                        <p>
+                          <b>Publish products:</b>
+                          This option will update Published="TRUE" and Status="active" after fetching data.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <b>Inventory Policy Continue:</b>
+                          This option will update Variant Inventory Policy="continue" to enable <b>Continue selling when
+                            out of stock</b> feature, which allows customers to purchase the Sales products even when
+                          they
+                          are out of stock
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <b>Handle Suffix:</b>
+                          This option will automatically add a suffix value to product Handle after fetching data if you
+                          want to duplicate products for special occasion sales.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <b>Append Tags:</b>
+                          This option will automatically add tags to product Tags after fetching data if you want
+                          products to be added to smart collection(s).
+                        </p>
+                      </li>
+                    </ul>
                   </li>
                 </ol>
               </section>
               <section class="section-documentation" id="Step4">
-                <h2 class="section-documentation__heading">STEP 4: Configure to exclude products from being searched
+                <h2 class="section-documentation__heading">
+                  STEP 4: Download
                 </h2>
                 <ol>
                   <li>
                     <p>
-                      Follow the guide here:
-                      <a href="search.html#Exclude"><i><u>Exclude products from Search</u></i></a>.
+                      After fetching successfully, the <b>Download</b> button will be enabled for you to download the new CSV
+                      file.
                     </p>
-                  </li>
-                  <li>
-                    <p>
-                      Add the same Sales tag from STEP 1 to the theme search exclusion settings.
-                    </p>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_qQikTXZlQo.png"
+                    <div class="bwp-image"><a href="images/shopifytools/chrome_mj1WpVf0Xd.png"
                         data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_qQikTXZlQo.png" alt="Wpbingo" /></a></div>
+                          src="images/shopifytools/chrome_mj1WpVf0Xd.png" alt="Wpbingo" /></a></div>
                   </li>
                 </ol>
               </section>
               <section class="section-documentation" id="Step5">
-                <h2 class="section-documentation__heading">STEP 5: Create secret smart collection</h2>
+                <h2 class="section-documentation__heading">
+                  STEP 5: Rollback and Detach
+                </h2>
+                <p>
+                  After fetching successfully, You have 2 ways to revert table to your inital data.
+                </p>
                 <ol>
                   <li>
                     <p>
-                      Use the guide here:
-                      <a href="collection_pages.html#ProtectedCollection">
-                        <i><u>Protected Collection</u></i>
-                      </a> to create a secret
-                      collection.
+                      Click on <b>Rollback</b> button.
                     </p>
+                    <p>
+                      It will rollback you table to the inital stage and remove data for download feature.
+                    </p>
+                    <div class="bwp-image"><a href="images/shopifytools/chrome_ArxjUAVxV6.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid"
+                          src="images/shopifytools/chrome_ArxjUAVxV6.png" alt="Wpbingo" /></a></div>
                   </li>
                   <li>
                     <p>
-                      Configure the smart condition to include all Sales products:
-                      Tag <strong>is equal to</strong> the Sales tag from STEP 1.
+                      Click on <b>Detach</b> button.
                     </p>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_HztuyKpac8.png"
+                    <p>
+                      It will remove the file from the app and reset all data. You can use this to import another CSV
+                      file.
+                    </p>
+                    <div class="bwp-image"><a href="images/shopifytools/chrome_dUZh9ZTcti.png"
                         data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_HztuyKpac8.png" alt="Wpbingo" /></a></div>
+                          src="images/shopifytools/chrome_dUZh9ZTcti.png" alt="Wpbingo" /></a></div>
                   </li>
                 </ol>
               </section>
-              <section class="section-documentation" id="Step6">
-                <h2 class="section-documentation__heading">STEP 6: Ensure Sales products are not imported to other
-                  collections</h2>
+              <section class="section-documentation" id="Note">
+                <h2 class="section-documentation__heading">
+                  NOTE
+                </h2>
+                <p>
+                  The app will not sync these columns below to avoid importing incorrect data from another source.
+                </p>
                 <ol>
                   <li>
-                    <p>
-                      Go to other collections that use smart conditions.
-                    </p>
+                    Variant Inventory Qty
                   </li>
                   <li>
-                    <p>
-                      Add an exclusion rule so Sales products are filtered out:
-                      Tag <strong>is not equal to</strong> the Sales tag from STEP 1.
-                    </p>
-                    <div class="bwp-image"><a href="images/porderwsale/chrome_SJkjKhNxWp.png"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="images/porderwsale/chrome_SJkjKhNxWp.png" alt="Wpbingo" /></a></div>
-                    <p>
-                      By doing this, you ensure that the Sales products are only included in the secret collection and
-                      not duplicated in other collections.
-                    </p>
+                    Variant Price
+                  </li>
+                  <li>
+                    Size Chart (product.metafields.bwp_fields.size_chart)
                   </li>
                 </ol>
               </section>
