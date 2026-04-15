@@ -13,6 +13,25 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
+	<style>
+		.section-documentation table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		.section-documentation table,
+		.section-documentation th,
+		.section-documentation td {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		.section-documentation th {
+			background-color: #f2f2f2;
+			text-align: center;
+			width: 25%;
+		}
+	</style>
 </head>
 
 <body>
@@ -20,8 +39,8 @@
 		<header class="bwp-header">
 			<div class="bwp-header__wrapper">
 				<div class="bwp-header__content d-flex justify-content-between align-items-center">
-					<h1 class="bwp-logo"><a class="bwp-logo__link" href="index.html"><img class="img-fluid" src="images/5DLA_header_logo_white_bg.png"
-								alt="Logo" /><span class="d-none">Wpbingo</span></a></h1>
+					<h1 class="bwp-logo"><a class="bwp-logo__link" href="index.html"><img class="img-fluid"
+								src="images/5DLA_header_logo_white_bg.png" alt="Logo" /><span class="d-none">Wpbingo</span></a></h1>
 					<nav class="bwp-main-menu">
 						<ul class="nav">
 							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -51,7 +70,8 @@
 										<a class="nav-link js-nav-scroll" href="#section5">Product image 360</a>
 										<a class="nav-link js-nav-scroll" href="#section6">Variant Images Grouped</a>
 										<a class="nav-link js-nav-scroll" href="#section7">Variant Images Color</a>
-										<a class="nav-link js-nav-scroll" href="#section8">Size Chart</a>
+										<a class="nav-link js-nav-scroll" href="#section8SizeChart">Size Chart</a>
+										<a class="nav-link js-nav-scroll" href="#section9Bundle">Bundle</a>
 									</div>
 								</div>
 							</div>
@@ -300,7 +320,7 @@
 								<div class="bwp-image"><a href="images/image-color-2.jpg" data-fancybox="data-fancybox"><img
 											class="img-fluid" src="images/image-color-2.jpg" alt="Product short description" /></a></div>
 							</section>
-							<section class="section-documentation" id="section8">
+							<section class="section-documentation" id="section8SizeChart">
 								<h2 class="section-documentation__heading">Size Chart</h2>
 								<ol>
 									<li>
@@ -398,6 +418,86 @@
 													alt="Product short description" />
 											</a>
 										</div>
+									</li>
+								</ol>
+							</section>
+							<section class="section-documentation" id="section9Bundle">
+								<h2 class="section-documentation__heading">Bundle</h2>
+								<ol>
+									<li>
+										<p>Create metaobject and metafield</p>
+										<p><b>METAOBJECT</b></p>
+										<ul>
+											<li>Name: BW Field Bundle</li>
+											<li>Type: bw_field_bundle</li>
+										</ul>
+										<br>
+										<table>
+											<thead>
+												<tr>
+													<th>Label</th>
+													<th>Key</th>
+													<th>Type</th>
+													<th>Constraint</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Bundle Name</td>
+													<td>bundle_name</td>
+													<td>Single line text</td>
+													<td>Required</td>
+												</tr>
+												<tr>
+													<td>Products</td>
+													<td>products</td>
+													<td>List of products</td>
+													<td>
+														<div>Required</div>
+														<div>Min: 2</div>
+													</td>
+												</tr>
+												<tr>
+													<td>Percentage Discount</td>
+													<td>percentage_discount</td>
+													<td>Decimal</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>Fixed Amount Discount</td>
+													<td>fixed_amount_discount</td>
+													<td>Decimal</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>Fixed Bundle Price</td>
+													<td>fixed_bundle_price</td>
+													<td>Decimal</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+										<br>
+										<p><b>METAFIELD</b></p>
+										<br>
+										<table>
+											<thead>
+												<tr>
+													<th>Label</th>
+													<th>Key</th>
+													<th>Type</th>
+													<th>Constraint</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Bundle</td>
+													<td>bwp_fields.bundle</td>
+													<td>Metaobject: bw_field_bundle</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
 									</li>
 								</ol>
 							</section>
