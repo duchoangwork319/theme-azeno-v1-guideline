@@ -74,27 +74,28 @@
                 <ol>
                   <li>
                     <p>
-                      Open this link: <a target="_blank"
-                        href="https://duchoangwork319.github.io/shopifytools/">Shopify Tools</a>
+                      Open this link: <a target="_blank" href="https://duchoangwork319.github.io/shopifytools/">Shopify
+                        Tools</a>
                     </p>
-                    <div class="bwp-image"><a href="https://placehold.co/1200x700?text=Shopify+Tools+home+screen"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="https://placehold.co/1200x700?text=Shopify+Tools+home+screen" alt="Wpbingo" /></a>
+                    <div class="bwp-image"><a href="images/shopifytools/0BoFR4Zyuk.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid" src="images/shopifytools/0BoFR4Zyuk.png"
+                          alt="Wpbingo" /></a>
                     </div>
+
                   </li>
                   <li>
                     <p>
                       Click <b>Import CSV</b> and choose the file you exported in Step 1.
                     </p>
-                    <div class="bwp-image"><a href="https://placehold.co/1200x700?text=Import+CSV+button"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="https://placehold.co/1200x700?text=Import+CSV+button" alt="Wpbingo" /></a></div>
+                    <div class="bwp-image"><a href="images/shopifytools/AWLopsCTwD.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid" src="images/shopifytools/AWLopsCTwD.png"
+                          alt="Wpbingo" /></a></div>
                     <p>
                       Once the file is imported, the app will show a preview table of your products.
                     </p>
-                    <div class="bwp-image"><a href="https://placehold.co/1200x700?text=CSV+preview+table"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="https://placehold.co/1200x700?text=CSV+preview+table" alt="Wpbingo" /></a></div>
+                    <div class="bwp-image"><a href="images/shopifytools/D40biG5eyV.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid" src="images/shopifytools/D40biG5eyV.png"
+                          alt="Wpbingo" /></a></div>
                     <p>
                       If you try to import a file that is very large (50 handles or more), the app will warn you
                       that fetching may take a while. This is just a heads-up — you can still continue.
@@ -111,12 +112,10 @@
                   saved in your browser, so you only need to set it up once — it will still be there the next time
                   you open the tool.
                 </p>
-                <div class="bwp-image"><a href="https://placehold.co/1200x700?text=Configuration+button"
-                    data-fancybox="data-fancybox"><img class="img-fluid"
-                      src="https://placehold.co/1200x700?text=Configuration+button" alt="Wpbingo" /></a></div>
-                <div class="bwp-image"><a href="https://placehold.co/900x1200?text=Configuration+panel"
-                    data-fancybox="data-fancybox"><img class="img-fluid"
-                      src="https://placehold.co/900x1200?text=Configuration+panel" alt="Wpbingo" /></a></div>
+                <div class="bwp-image"><a href="images/shopifytools/PJXPP1GLOi.png" data-fancybox="data-fancybox"><img
+                      class="img-fluid" src="images/shopifytools/PJXPP1GLOi.png" alt="Wpbingo" /></a></div>
+                <div class="bwp-image"><a href="images/shopifytools/8QAEpIiQC3.png" data-fancybox="data-fancybox"><img
+                      class="img-fluid" src="images/shopifytools/8QAEpIiQC3.png" alt="Wpbingo" /></a></div>
                 <ol>
                   <li>
                     <p>
@@ -164,33 +163,56 @@
                   <li>
                     <p>
                       <b>Columns:</b>
-                      This is a checklist of every column in your CSV file.
+                      This is a checklist of every possible product column the tool knows about, not just the
+                      columns already in your CSV file. It controls which columns end up in the preview table and
+                      in the file you download.
                     </p>
                     <ul>
                       <li>
                         <p>
-                          <b>Checked</b> means that column will be refreshed with the latest information from your
-                          store when you fetch.
+                          <b>Checked</b> means that column is included — it shows up in the preview table, and
+                          when you fetch, the tool fills it in with the latest information from your store.
                         </p>
                       </li>
                       <li>
                         <p>
-                          <b>Unchecked</b> means the tool will leave that column exactly as it is in your imported
-                          CSV, even after fetching.
+                          <b>Unchecked</b> means that column is left out entirely — it will not appear in the
+                          preview table or in the file you download.
                         </p>
                       </li>
                       <li>
                         <p>
-                          A few columns, such as <b>Handle</b>, are shown in <b>bold</b> with a checkbox that
-                          cannot be changed. These columns can never be refreshed automatically, because they are
-                          used to uniquely identify each product — always keeping your original value avoids
-                          accidentally mixing up products.
+                          Columns shown in <span style="color:#d33;font-weight:bold;">bold red</span> (such as
+                          <b>Handle</b>) have no checkbox and are always included. Their value is never changed by
+                          fetching — the tool always keeps what is already in your CSV, since Handle is used to
+                          uniquely identify each product.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Columns shown in <span style="color:#b8860b;font-weight:bold;">bold yellow</span> (such
+                          as <b>Title</b> and the Option columns) are always included and their checkbox cannot be
+                          unchecked, but unlike the red ones, their value <b>can</b> still be refreshed when you
+                          fetch.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          A number of columns — such as pricing, inventory quantity, and some extra Shopify
+                          metafield columns — are <b>unchecked by default</b> to keep the file simple. These are
+                          ordinary checkboxes, so you can turn any of them on if you do want that data included.
                         </p>
                       </li>
                     </ul>
-                    <div class="bwp-image"><a href="https://placehold.co/900x900?text=Columns+checklist"
+                    <p>
+                      <b>Tip:</b> Your CSV file does not need to already contain every column. For example, if
+                      your file only has a <b>Handle</b> column, the tool can still fetch and fill in Title,
+                      Vendor, and every other column you have checked here — you do not need to prepare those
+                      columns yourself first.
+                    </p>
+                    <div class="bwp-image"><a href="images/shopifytools/chrome_Ax1G3xQ6gy.png"
                         data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="https://placehold.co/900x900?text=Columns+checklist" alt="Wpbingo" /></a></div>
+                          src="images/shopifytools/chrome_Ax1G3xQ6gy.png" alt="Wpbingo" /></a></div>
                   </li>
                   <li>
                     <p>
@@ -210,17 +232,17 @@
                       Click the <b>Fetch</b> button to start pulling the latest product data from your store,
                       using the settings you configured in Step 3.
                     </p>
-                    <div class="bwp-image"><a href="https://placehold.co/1200x700?text=Fetch+button"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="https://placehold.co/1200x700?text=Fetch+button" alt="Wpbingo" /></a></div>
+                    <div class="bwp-image"><a href="images/shopifytools/VEJBdkHpTK.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid" src="images/shopifytools/VEJBdkHpTK.png"
+                          alt="Wpbingo" /></a></div>
                     <p>
                       A short message will appear letting you know roughly how long the fetch will take. While it
                       is running, the button will show <b>Fetching</b> and the table will keep showing your
                       current data.
                     </p>
-                    <div class="bwp-image"><a href="https://placehold.co/1200x700?text=Fetching+in+progress"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="https://placehold.co/1200x700?text=Fetching+in+progress" alt="Wpbingo" /></a></div>
+                    <div class="bwp-image"><a href="images/shopifytools/uA510VSrF4.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid" src="images/shopifytools/uA510VSrF4.png"
+                          alt="Wpbingo" /></a></div>
                   </li>
                   <li>
                     <p>
@@ -228,9 +250,16 @@
                       combining your original CSV with the fresh data, following the Columns choices you made in
                       Step 3.
                     </p>
-                    <div class="bwp-image"><a href="https://placehold.co/1200x700?text=Updated+preview+table"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="https://placehold.co/1200x700?text=Updated+preview+table" alt="Wpbingo" /></a></div>
+                    <div class="bwp-image"><a href="images/shopifytools/Re5ySbngtO.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid" src="images/shopifytools/Re5ySbngtO.png"
+                          alt="Wpbingo" /></a></div>
+                    <p>
+                      For every included column (except the bold red ones), the tool always uses whatever value
+                      comes back from your store — even if that value happens to be blank. This is intentional:
+                      if a column shows up empty after fetching, it usually means your store genuinely has no
+                      value there for that product, rather than the tool silently keeping an old value and
+                      hiding the problem from you.
+                    </p>
                   </li>
                   <li>
                     <p>
@@ -239,9 +268,9 @@
                       products that were fetched successfully are kept — you just need to click <b>OK</b> to
                       acknowledge the message and continue.
                     </p>
-                    <div class="bwp-image"><a href="https://placehold.co/900x700?text=Fetch+errors+message"
-                        data-fancybox="data-fancybox"><img class="img-fluid"
-                          src="https://placehold.co/900x700?text=Fetch+errors+message" alt="Wpbingo" /></a></div>
+                    <div class="bwp-image"><a href="images/shopifytools/aCOmAVyMWv.png"
+                        data-fancybox="data-fancybox"><img class="img-fluid" src="images/shopifytools/aCOmAVyMWv.png"
+                          alt="Wpbingo" /></a></div>
                   </li>
                 </ol>
               </section>
@@ -304,40 +333,17 @@
                   NOTE
                 </h2>
                 <p>
-                  To protect your store's pricing and inventory from being overwritten by another source, the
-                  following columns are never changed when fetching, are always hidden from the preview table, and
-                  cannot be turned on in the Columns checklist:
+                  <b>Handle</b> is the only column that can never be included or excluded, and its value can never
+                  be changed by fetching. It is shown in <span style="color:#d33;font-weight:bold;">bold
+                    red</span> with no checkbox, because it is used to uniquely identify each of your products —
+                  always keeping your original value avoids accidentally mixing products up.
                 </p>
-                <ol>
-                  <li>
-                    Variant Inventory Qty
-                  </li>
-                  <li>
-                    Variant Price
-                  </li>
-                  <li>
-                    Variant Compare At Price
-                  </li>
-                  <li>
-                    Unit Price Total Measure
-                  </li>
-                  <li>
-                    Unit Price Total Measure Unit
-                  </li>
-                  <li>
-                    Unit Price Base Measure
-                  </li>
-                  <li>
-                    Unit Price Base Measure Unit
-                  </li>
-                  <li>
-                    Size Chart (product.metafields.bwp_fields.size_chart)
-                  </li>
-                </ol>
                 <p>
-                  A small number of other columns, such as <b>Handle</b>, are still shown in the preview table and
-                  the Columns checklist, but cannot be refreshed from your store — the tool always keeps your
-                  original value for these, since they are used to uniquely identify your products.
+                  To keep the downloaded file simple, a number of other columns are <b>unchecked by default</b> —
+                  this includes pricing columns (such as Variant Price and Variant Compare At Price), inventory
+                  quantity, and a handful of extra Shopify metafield columns (such as Badge Label, Activity, and
+                  Age group). These are ordinary checkboxes, though — open <b>Configuration</b> and check any of
+                  them if you do want that data included in the table and the downloaded CSV.
                 </p>
               </section>
             </div>
